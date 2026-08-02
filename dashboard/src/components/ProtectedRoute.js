@@ -4,9 +4,9 @@ import { useAuth } from "../context/AuthContext";
 const ProtectedRoute = ({ children }) => {
     const { user, loading } = useAuth();
 
-    useEffect(() => {
+useEffect(() => {
         if (!loading && !user) {
-            window.location.href = "/login";
+            window.location.href = `${process.env.REACT_APP_FRONTEND_URL || "http://localhost:3000"}/login`;
         }
     }, [loading, user]);
 

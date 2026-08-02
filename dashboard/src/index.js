@@ -6,7 +6,6 @@ import './theme.css';
 import { AuthProvider } from "./context/AuthContext";
 import { PortfolioProvider } from "./context/PortfolioContext";
 import { MarketDataProvider } from "./context/MarketDataContext";
-import { ThemeProvider } from "./context/ThemeContext";
 
 const root = ReactDOM.createRoot(
     document.getElementById("root")
@@ -14,14 +13,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
     <React.StrictMode>
-        <ThemeProvider>
             <AuthProvider>
                 <PortfolioProvider>
                     <MarketDataProvider>
                         <App />
                     </MarketDataProvider>
                 </PortfolioProvider>
-            </AuthProvider>
-        </ThemeProvider>
+            </AuthProvider>       
     </React.StrictMode>
 );

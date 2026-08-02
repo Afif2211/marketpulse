@@ -63,7 +63,7 @@ export const AuthProvider = ({ children }) => {
 
     };
 
-    const logout = async () => {
+const logout = async () => {
 
         try {
 
@@ -77,7 +77,7 @@ export const AuthProvider = ({ children }) => {
 
         setUser(null);
 
-        window.location.href = "/login";
+        window.location.href = `${process.env.REACT_APP_FRONTEND_URL || "http://localhost:3000"}/login`;
 
     };
 
