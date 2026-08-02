@@ -10,6 +10,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api";
 import { GoogleLogin } from "@react-oauth/google";
+import { useRef, useEffect } from "react";
 
 const Signup = () => {
 
@@ -127,6 +128,30 @@ const Signup = () => {
     }
 
   };
+
+  const googleBtnRef = useRef(null);
+
+  const [googleBtnWidth, setGoogleBtnWidth] = useState(300);
+
+  useEffect(() => {
+
+    const updateWidth = () => {
+
+      if (googleBtnRef.current) {
+
+        setGoogleBtnWidth(Math.min(googleBtnRef.current.offsetWidth, 400));
+
+      }
+
+    };
+
+    updateWidth();
+
+    window.addEventListener("resize", updateWidth);
+
+    return () => window.removeEventListener("resize", updateWidth);
+
+  }, []);
 
   return (
     <section className="container auth-section">
@@ -318,12 +343,12 @@ const Signup = () => {
 
           {/* Google */}
 
-          <div className="auth-google-btn-wrapper">
+         <div className="auth-google-btn-wrapper" ref={googleBtnRef}>
 
             <GoogleLogin
               onSuccess={handleGoogleSuccess}
               onError={() => setError("Google sign-in failed.")}
-              width="100%"
+              width={googleBtnWidth}
             />
 
           </div>
