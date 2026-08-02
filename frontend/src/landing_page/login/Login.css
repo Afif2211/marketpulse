@@ -110,6 +110,20 @@
 
     padding-bottom:24px;
 
+    padding-left:16px;
+
+    padding-right:16px;
+
+}
+
+.auth-row{
+
+    margin-left:0;
+
+    margin-right:0;
+
+    width:100%;
+
 }
 
 .auth-form-col{
@@ -139,15 +153,6 @@
     margin-bottom:32px !important;
 
 }
-
-.auth-remember-row{
-
-    flex-wrap:wrap;
-
-    gap:12px;
-
-}
-
 }
 
 @media(max-width:480px){
@@ -157,6 +162,10 @@
     padding-top:16px;
 
     padding-bottom:16px;
+
+    padding-left:14px;
+
+    padding-right:14px;
 
 }
 
@@ -191,6 +200,12 @@
 .auth-row{
 
     border-radius:18px;
+
+    margin-left:0;
+
+    margin-right:0;
+
+    width:100%;
 
 }
 
