@@ -119,7 +119,9 @@ const Signup = () => {
         JSON.stringify(result.data.user)
       );
 
-      window.location.href = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
+      const dashboardUrl = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
+
+      window.location.href = `${dashboardUrl}?token=${encodeURIComponent(result.data.token)}`;
 
     } catch (error) {
       setError("Something went wrong.");

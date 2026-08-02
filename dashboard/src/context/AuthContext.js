@@ -11,9 +11,36 @@ export const AuthProvider = ({ children }) => {
 
     useEffect(() => {
 
+        const captureTokenFromUrl = () => {
+
+            const params = new URLSearchParams(window.location.search);
+
+            const tokenFromUrl = params.get("token");
+
+            if (tokenFromUrl) {
+
+                localStorage.setItem("token", tokenFromUrl);
+
+                params.delete("token");
+
+                const cleanedSearch = params.toString();
+
+                const newUrl =
+                    window.location.pathname +
+                    (cleanedSearch ? `?${cleanedSearch}` : "") +
+                    window.location.hash;
+
+                window.history.replaceState({}, "", newUrl);
+
+            }
+
+        };
+
         const loadUser = async () => {
 
             try {
+
+                captureTokenFromUrl();
 
                 const result = await api.getCurrentUser();
 
@@ -63,7 +90,7 @@ export const AuthProvider = ({ children }) => {
 
     };
 
-const logout = async () => {
+    const logout = async () => {
 
         try {
 
@@ -74,6 +101,8 @@ const logout = async () => {
             console.error(error);
 
         }
+
+        localStorage.removeItem("token");
 
         setUser(null);
 

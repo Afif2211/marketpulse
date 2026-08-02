@@ -83,6 +83,7 @@ const googleAuth = async (req, res) => {
 
         res.status(200).json({
             success: true,
+            token,
             user: {
                 id: user._id,
                 fullName: user.fullName,
@@ -304,6 +305,7 @@ const registerUser = async (req, res) => {
 
         res.status(201).json({
             success: true,
+            token,
             user: {
                 id: user._id,
                 fullName: user.fullName,
@@ -392,6 +394,7 @@ const loginUser = async (req, res) => {
 
         res.json({
             success: true,
+            token,
             user: {
                 id: user._id,
                 fullName: user.fullName,

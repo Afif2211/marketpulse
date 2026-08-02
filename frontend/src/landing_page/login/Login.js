@@ -60,15 +60,17 @@ const Login = () => {
   return;
 }
 
-// JWT is now stored securely in an HTTP-only cookie.
-// Save the user only if you want quick access to profile info in the frontend.
+// Save the user for quick access to profile info in the frontend.
 localStorage.setItem(
   "user",
   JSON.stringify(result.data.user)
 );
 
-// Redirect to the dashboard.
-window.location.href = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
+// Redirect to the dashboard, passing the token so it can
+// authenticate cross-domain requests via Authorization header.
+const dashboardUrl = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
+
+window.location.href = `${dashboardUrl}?token=${encodeURIComponent(result.data.token)}`;
 
   } catch (error) {
     setError("Something went wrong.");
@@ -97,7 +99,9 @@ const handleGoogleSuccess = async (credentialResponse) => {
         JSON.stringify(result.data.user)
       );
 
-      window.location.href = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
+      const dashboardUrl = process.env.REACT_APP_DASHBOARD_URL || "http://localhost:3001";
+
+      window.location.href = `${dashboardUrl}?token=${encodeURIComponent(result.data.token)}`;
 
     } catch (error) {
       setError("Something went wrong.");

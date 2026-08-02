@@ -5,7 +5,13 @@ const User = require("../models/User");
 const protect = async (req, res, next) => {
     try {
 
-        const token = req.cookies.jwt;
+        let token = req.cookies.jwt;
+
+        const authHeader = req.headers.authorization;
+
+        if (authHeader && authHeader.startsWith("Bearer ")) {
+            token = authHeader.split(" ")[1];
+        }
 
         if (!token) {
             return res.status(401).json({
