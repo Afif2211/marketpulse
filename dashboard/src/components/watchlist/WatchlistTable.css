@@ -1,0 +1,277 @@
+.watchlist-table-card{
+
+    background:#ffffff;
+
+    border:1px solid #eef2f7;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.watchlist-table-header{
+
+    margin-bottom:24px;
+
+}
+
+.watchlist-table-header h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.watchlist-table-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+}
+
+.watchlist-table{
+
+    margin:0;
+    min-width:650px;
+
+}
+
+.watchlist-table thead th{
+
+    border:none;
+
+    color:#6b7280;
+
+    font-weight:600;
+
+    padding-bottom:18px;
+
+}
+
+.watchlist-table td{
+
+    padding:20px 10px;
+
+    border-top:1px solid #eef2f7;
+
+    vertical-align:middle;
+
+}
+
+.watchlist-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.watchlist-table tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+.watch-company{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.watch-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+    color:#2563eb;
+
+}
+
+.watch-company strong{
+
+    display:block;
+
+    font-size:16px;
+
+}
+
+.watch-company small{
+
+    color:#6b7280;
+
+}
+
+.positive-change{
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+}
+
+.negative-change{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+}
+
+.remove-stock-btn{
+
+    border:none;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    padding:9px 18px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.remove-stock-btn:hover{
+
+    background:#dc2626;
+
+}
+
+@media(max-width:768px){
+
+.watchlist-table-card{
+
+padding:20px;
+
+}
+
+.watch-icon{
+
+width:44px;
+
+height:44px;
+
+font-size:20px;
+
+}
+
+.watch-company strong{
+
+font-size:15px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.watchlist-table-card{
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.watchlist-table-header h2{
+
+font-size:22px;
+
+}
+
+.watchlist-table-header p{
+
+font-size:13px;
+
+}
+
+.watchlist-table{
+
+min-width:560px;
+
+}
+
+.watch-icon{
+
+width:40px;
+
+height:40px;
+
+font-size:17px;
+
+border-radius:12px;
+
+}
+
+.watch-company strong{
+
+font-size:14px;
+
+}
+
+.watch-company small{
+
+font-size:12px;
+
+}
+
+.positive-change,
+.negative-change{
+
+padding:6px 10px;
+
+font-size:13px;
+
+}
+
+.remove-stock-btn{
+
+padding:7px 14px;
+
+font-size:13px;
+
+}
+
+}

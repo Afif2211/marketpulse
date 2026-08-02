@@ -1,0 +1,322 @@
+.holdings-card{
+
+    background:var(--color-card-bg);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    border:1px solid var(--color-border);
+
+    transition:.35s;
+
+}
+
+.holdings-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.holdings-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.holdings-header h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--color-ink);
+
+}
+
+.holdings-header p{
+
+    margin-top:6px;
+
+    color:var(--color-muted);
+
+}
+
+.view-btn{
+
+    border:none;
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    filter:brightness(1.08);
+
+}
+
+.holdings-table{
+
+    margin:0;
+
+    min-width:600px;
+
+}
+
+.holdings-table thead th{
+
+    color:var(--color-muted);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+.holdings-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.holdings-table tbody tr:hover{
+
+    background:var(--color-surface);
+
+}
+
+.company-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.company-logo{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+.company-info h6{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:var(--color-ink);
+
+}
+
+.company-info span{
+
+    color:var(--color-muted);
+
+    font-size:14px;
+
+}
+
+.holdings-profit{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    width:fit-content;
+
+    background:rgba(21,128,61,.12);
+
+    color:#15803d;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+}
+
+.holdings-loss{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    width:fit-content;
+
+    background:rgba(220,38,38,.12);
+
+    color:#dc2626;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+}
+
+.trade-btn{
+
+    border:none;
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.trade-btn:hover{
+
+    filter:brightness(1.08);
+
+}
+
+@media(max-width:992px){
+
+.holdings-card{
+
+padding:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.holdings-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.view-btn{
+
+width:100%;
+
+}
+
+.holdings-header h2{
+
+font-size:22px;
+
+}
+
+.holdings-header p{
+
+font-size:14px;
+
+}
+
+.company-logo{
+
+width:42px;
+
+height:42px;
+
+font-size:18px;
+
+border-radius:12px;
+
+}
+
+.company-info{
+
+gap:10px;
+
+}
+
+.company-info h6{
+
+font-size:14px;
+
+}
+
+.company-info span{
+
+font-size:12px;
+
+}
+
+.holdings-profit,
+.holdings-loss{
+
+padding:6px 10px;
+
+font-size:13px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.holdings-card{
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.holdings-table{
+
+min-width:520px;
+
+}
+
+}

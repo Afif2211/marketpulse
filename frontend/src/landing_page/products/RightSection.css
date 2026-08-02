@@ -1,0 +1,345 @@
+.portfolio-section{
+
+    background:var(--color-surface);
+
+    padding:90px 0;
+
+    transition:background .3s ease;
+
+}
+
+.portfolio-section-eyebrow{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    color:var(--brand-end);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+    margin-bottom:24px;
+
+}
+
+.portfolio-section-title{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    color:var(--color-ink);
+
+    margin-bottom:24px;
+
+}
+
+.portfolio-section-highlight{
+
+    background:var(--brand-gradient);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+.portfolio-section-subtitle{
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:var(--color-muted);
+
+    margin-bottom:44px;
+
+}
+
+.portfolio-section-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-bottom:44px;
+
+}
+
+.portfolio-section-feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    transition:.25s;
+
+}
+
+.portfolio-section-feature:hover{
+
+    border-color:var(--brand-end);
+
+    transform:translateY(-3px);
+
+}
+
+.portfolio-section-feature-icon{
+
+    width:52px;
+
+    height:52px;
+
+    min-width:52px;
+
+    border-radius:14px;
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+}
+
+.portfolio-section-feature h6{
+
+    font-weight:700;
+
+    color:var(--color-ink);
+
+    margin-bottom:6px;
+
+}
+
+.portfolio-section-feature small{
+
+    color:var(--color-muted);
+
+}
+
+.portfolio-section-cta{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    padding:15px 36px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.portfolio-section-cta:hover{
+
+    filter:brightness(1.08);
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+
+.portfolio-section-image-col{
+
+    text-align:center;
+
+}
+
+.portfolio-mockup{
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    border-radius:24px;
+
+    padding:32px;
+
+    max-width:400px;
+
+    margin:0 auto;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+.portfolio-mockup-label{
+
+    color:var(--color-muted);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.portfolio-mockup-bar{
+
+    display:flex;
+
+    height:16px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    margin-bottom:28px;
+
+}
+
+.portfolio-mockup-segment{
+
+    height:100%;
+
+}
+
+.portfolio-mockup-legend{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.portfolio-mockup-legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.portfolio-mockup-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+}
+
+.portfolio-mockup-legend-item span:nth-child(2){
+
+    flex:1;
+
+    color:var(--color-ink);
+
+    font-size:.92rem;
+
+}
+
+.portfolio-mockup-legend-item strong{
+
+    color:var(--color-ink);
+
+    font-weight:700;
+
+}
+
+@media(max-width:992px){
+
+.portfolio-section{
+
+    padding:64px 0;
+
+}
+
+.portfolio-section-title{
+
+    font-size:2.1rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.portfolio-section{
+
+    padding:48px 0;
+
+}
+
+.portfolio-section-title{
+
+    font-size:1.75rem;
+
+}
+
+.portfolio-section-subtitle{
+
+    font-size:1rem;
+
+}
+
+.portfolio-section-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.portfolio-section-cta{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.portfolio-mockup{
+
+    padding:26px;
+
+}
+
+}

@@ -1,0 +1,215 @@
+.indices-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    border:1px solid #eef2f7;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.indices-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+.indices-header h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.indices-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+}
+
+.indices-table{
+
+    margin-bottom:0;
+
+}
+
+.indices-table thead th{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    border-bottom:1px solid #eef2f7;
+
+    padding:16px;
+
+}
+
+.indices-table tbody td{
+
+    padding:18px 16px;
+
+    vertical-align:middle;
+
+    border-bottom:1px solid #f3f4f6;
+
+}
+
+.indices-table tbody tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+.idx-positive-change{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+.idx-negative-change{
+
+    color:#dc2626;
+
+    font-weight:700;
+
+}
+
+.idx-status-badge{
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.idx-open{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.idx-closed{
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+.idx-buy-btn{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:9px 20px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.idx-buy-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:768px){
+
+.indices-card{
+
+padding:20px;
+
+}
+
+.indices-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:12px;
+
+}
+
+.indices-table{
+
+min-width:700px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.indices-card{
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.indices-header h2{
+
+font-size:20px;
+
+}
+
+.indices-header p{
+
+font-size:13px;
+
+}
+
+.indices-table{
+
+min-width:600px;
+
+}
+
+.idx-buy-btn{
+
+padding:7px 14px;
+
+font-size:13px;
+
+}
+
+}

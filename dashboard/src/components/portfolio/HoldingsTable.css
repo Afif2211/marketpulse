@@ -1,0 +1,260 @@
+.pf-holdings-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    border:1px solid #eef2f7;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.pf-holdings-header{
+
+    margin-bottom:25px;
+
+}
+
+.pf-holdings-header h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.pf-holdings-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+}
+
+.pf-holdings-table{
+
+    margin:0;
+
+    min-width:750px;
+
+}
+
+.pf-holdings-table thead th{
+
+    border:none;
+
+    color:#6b7280;
+
+    font-weight:600;
+
+    padding-bottom:18px;
+
+}
+
+.pf-holdings-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.pf-holdings-table tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+.pf-holdings-table td{
+
+    padding:20px 10px;
+
+    vertical-align:middle;
+
+    border-top:1px solid #eef2f7;
+
+}
+
+.pf-company-cell{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.pf-company-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    color:#2563eb;
+
+}
+
+.pf-company-cell strong{
+
+    display:block;
+
+    font-size:16px;
+
+}
+
+.pf-company-cell small{
+
+    color:#6b7280;
+
+}
+
+.pf-profit-badge{
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+}
+
+.pf-loss-badge{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+}
+
+.pf-buy-btn{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:8px 16px;
+
+    border-radius:10px;
+
+    margin-right:8px;
+
+    transition:.3s;
+
+}
+
+.pf-buy-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.pf-sell-btn{
+
+    border:none;
+
+    background:#f3f4f6;
+
+    color:#374151;
+
+    padding:8px 16px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.pf-sell-btn:hover{
+
+    background:#e5e7eb;
+
+}
+
+@media(max-width:768px){
+
+.pf-holdings-card{
+
+padding:20px;
+
+}
+
+.pf-holdings-header h2{
+
+font-size:22px;
+
+}
+
+.pf-holdings-header p{
+
+font-size:14px;
+
+}
+
+.pf-company-icon{
+
+width:42px;
+
+height:42px;
+
+font-size:18px;
+
+}
+
+.pf-buy-btn,
+.pf-sell-btn{
+
+padding:7px 12px;
+
+font-size:13px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.pf-holdings-card{
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.pf-holdings-table{
+
+min-width:650px;
+
+}
+
+}

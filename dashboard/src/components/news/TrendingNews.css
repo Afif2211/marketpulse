@@ -1,0 +1,233 @@
+.trending-news-card{
+
+    background:#ffffff;
+
+    border:1px solid #eef2f7;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.trending-news-header{
+
+    margin-bottom:24px;
+
+}
+
+.trending-news-header h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.trending-news-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+}
+
+.trending-news-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.trending-news-item{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid #f3f4f6;
+
+}
+
+.trending-news-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+.trending-news-number{
+
+    min-width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    font-size:16px;
+
+}
+
+.trending-news-content{
+
+    flex:1;
+
+}
+
+.trending-news-content h5{
+
+    margin:0;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    color:#111827;
+
+    font-weight:600;
+
+}
+
+.trending-news-meta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.trend-news-category{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.trend-news-time{
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+}
+
+.trend-news-source{
+
+    color:#6b7280;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+@media(max-width:768px){
+
+.trending-news-card{
+
+padding:20px;
+
+}
+
+.trending-news-item{
+
+gap:14px;
+
+}
+
+.trending-news-content h5{
+
+font-size:15px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.trending-news-card{
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.trending-news-header h2{
+
+font-size:20px;
+
+}
+
+.trending-news-header p{
+
+font-size:13px;
+
+}
+
+.trending-news-number{
+
+min-width:36px;
+
+height:36px;
+
+font-size:14px;
+
+}
+
+.trending-news-content h5{
+
+font-size:14px;
+
+}
+
+.trend-news-category,
+.trend-news-time,
+.trend-news-source{
+
+font-size:11px;
+
+}
+
+}

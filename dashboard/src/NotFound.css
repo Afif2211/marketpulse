@@ -1,0 +1,1271 @@
+/* ===========================
+   MARKETPULSE 404 PAGE
+=========================== */
+
+.notfound-page{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#f8fbff,#eef5ff,#ffffff);
+}
+
+/* ===========================
+   GLASS CARD
+=========================== */
+
+.glass-card{
+    position:relative;
+    width:760px;
+    padding:70px;
+    border-radius:32px;
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.55);
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.08),
+    0 0 80px rgba(56,126,209,.08);
+
+    text-align:center;
+
+    z-index:5;
+
+    animation:fadeUp 1s ease;
+}
+
+/* ===========================
+   ERROR LABEL
+=========================== */
+
+.error-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:#edf4ff;
+
+    color:#387ed1;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   404
+=========================== */
+
+.error-title{
+
+    font-size:9rem;
+
+    font-weight:900;
+
+    line-height:1;
+
+    margin:0;
+
+    color:#387ed1;
+
+    letter-spacing:8px;
+
+    text-shadow:
+    0 10px 35px rgba(56,126,209,.25);
+
+}
+
+.error-title span{
+
+    color:#78b4ff;
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.heading{
+
+    margin-top:15px;
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    color:#212529;
+
+}
+
+/* ===========================
+   Description
+=========================== */
+
+.description{
+
+    margin:28px auto;
+
+    width:85%;
+
+    color:#6c757d;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   STOCK CHART
+=========================== */
+
+.stock-chart{
+
+    width:100%;
+
+    margin:45px 0;
+
+}
+
+.chart-line{
+
+    fill:none;
+
+    stroke:url(#lineGradient);
+
+    stroke-width:6;
+
+    stroke-linejoin:round;
+
+    stroke-linecap:round;
+
+    stroke-dasharray:1400;
+
+    stroke-dashoffset:1400;
+
+    animation:drawLine 3s ease forwards;
+
+}
+
+/* ===========================
+   TICKER
+=========================== */
+
+.ticker{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+    color:#387ed1;
+
+    font-weight:600;
+
+}
+
+.ticker span{
+
+    background:white;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.ticker span:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.home-btn{
+
+    display:inline-block;
+
+    padding:16px 42px;
+
+    border-radius:12px;
+
+    background:#387ed1;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:17px;
+
+    transition:.35s;
+
+    box-shadow:
+    0 15px 35px rgba(56,126,209,.22);
+
+}
+
+.home-btn:hover{
+
+    color:white;
+
+    background:#2f6ec0;
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 25px 45px rgba(56,126,209,.35);
+
+}
+
+/* ===========================
+   FLOATING GRADIENTS
+=========================== */
+
+.gradient-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(40px);
+
+    opacity:.45;
+
+}
+
+.circle-one{
+
+    width:280px;
+
+    height:280px;
+
+    background:#6ea8fe;
+
+    top:-60px;
+
+    left:-70px;
+
+    animation:float1 8s ease-in-out infinite;
+
+}
+
+.circle-two{
+
+    width:220px;
+
+    height:220px;
+
+    background:#387ed1;
+
+    right:6%;
+
+    top:20%;
+
+    animation:float2 10s ease-in-out infinite;
+
+}
+
+.circle-three{
+
+    width:340px;
+
+    height:340px;
+
+    background:#9fc8ff;
+
+    right:-80px;
+
+    bottom:-90px;
+
+    animation:float3 9s ease-in-out infinite;
+
+}
+
+/* ===========================
+   FLOATING DOTS
+=========================== */
+
+.dot{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:#387ed1;
+
+    opacity:.25;
+
+}
+
+.dot1{
+
+    width:12px;
+
+    height:12px;
+
+    left:18%;
+
+    top:20%;
+
+    animation:floatDots 5s infinite;
+
+}
+
+.dot2{
+
+    width:18px;
+
+    height:18px;
+
+    right:18%;
+
+    top:25%;
+
+    animation:floatDots 6s infinite;
+
+}
+
+.dot3{
+
+    width:10px;
+
+    height:10px;
+
+    left:30%;
+
+    bottom:18%;
+
+    animation:floatDots 7s infinite;
+
+}
+
+.dot4{
+
+    width:14px;
+
+    height:14px;
+
+    right:28%;
+
+    bottom:14%;
+
+    animation:floatDots 5.5s infinite;
+
+}
+
+.dot5{
+
+    width:20px;
+
+    height:20px;
+
+    left:50%;
+
+    top:12%;
+
+    animation:floatDots 8s infinite;
+
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes drawLine{
+
+    to{
+
+        stroke-dashoffset:0;
+
+    }
+
+}
+
+@keyframes float1{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-35px);
+
+    }
+
+}
+
+@keyframes float2{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(30px);
+
+    }
+
+}
+
+@keyframes float3{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+}
+
+@keyframes floatDots{
+
+    0%,100%{
+
+        transform:translateY(0) scale(1);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px) scale(1.4);
+
+    }
+
+}
+/* ===================================
+   PULSING CARD
+=================================== */
+
+.glass-card{
+
+    animation:
+    fadeUp 1s ease,
+    pulseCard 4s ease-in-out infinite;
+
+}
+
+@keyframes pulseCard{
+
+    0%,100%{
+
+        box-shadow:
+        0 25px 60px rgba(0,0,0,.08),
+        0 0 80px rgba(56,126,209,.08);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 30px 80px rgba(0,0,0,.10),
+        0 0 120px rgba(56,126,209,.22);
+
+    }
+
+}
+
+/* ===================================
+   SCROLLING TICKER
+=================================== */
+
+.ticker-container{
+
+    overflow:hidden;
+
+    margin-bottom:45px;
+
+}
+
+.ticker{
+
+    display:flex;
+
+    gap:22px;
+
+    width:max-content;
+
+    animation:scrollTicker 18s linear infinite;
+
+}
+
+.ticker span{
+
+    white-space:nowrap;
+
+}
+
+@keyframes scrollTicker{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* ===================================
+   CHART DOTS
+=================================== */
+
+.chart-dot{
+
+    fill:#387ed1;
+
+    stroke:white;
+
+    stroke-width:3;
+
+    filter:drop-shadow(0 0 10px #387ed1);
+
+}
+
+.d1{
+
+    animation:blink 2s infinite;
+
+}
+
+.d2{
+
+    animation:blink 2s .3s infinite;
+
+}
+
+.d3{
+
+    animation:blink 2s .6s infinite;
+
+}
+
+.d4{
+
+    animation:blink 2s .9s infinite;
+
+}
+
+.d5{
+
+    animation:blink 2s 1.2s infinite;
+
+}
+
+@keyframes blink{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.8);
+
+        opacity:.35;
+
+    }
+
+}
+
+/* ===================================
+   SMOOTHER PARALLAX
+=================================== */
+
+.gradient-circle{
+
+    transition:transform .35s ease-out;
+
+}
+
+/* ===========================
+   STOCK RING 404
+=========================== */
+
+.error-title{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    margin-bottom:25px;
+
+}
+
+.four{
+
+    font-size:9rem;
+
+    font-weight:900;
+
+    color:#387ed1;
+
+    text-shadow:
+    0 0 30px rgba(56,126,209,.28);
+
+}
+
+.stock-ring{
+
+    position:relative;
+
+    width:150px;
+
+    height:150px;
+
+}
+
+.ring{
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:50%;
+
+    border:5px solid #387ed1;
+
+    animation:rotateRing 10s linear infinite;
+
+}
+
+.ring2{
+
+    border-color:#6ea8fe;
+
+    transform:scale(.82);
+
+    animation-direction:reverse;
+
+    animation-duration:7s;
+
+}
+
+.ring3{
+
+    border-color:#9fc8ff;
+
+    transform:scale(.64);
+
+    animation-duration:5s;
+
+}
+
+.ring-center{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.pulse-dot{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#387ed1;
+
+    box-shadow:
+    0 0 25px #387ed1;
+
+    animation:pulseDot 1.6s infinite;
+
+}
+
+@keyframes rotateRing{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes pulseDot{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.7);
+
+    }
+
+}
+
+/* ===========================
+   CANDLESTICKS
+=========================== */
+
+.stock-chart{
+
+    margin:50px 0;
+
+    width:100%;
+
+}
+
+.wick{
+
+    stroke:#8f9aa8;
+
+    stroke-width:4;
+
+}
+
+.bull{
+
+    fill:#22c55e;
+
+    transform-origin:center bottom;
+
+    animation:growBull 1.4s ease forwards;
+
+}
+
+.bear{
+
+    fill:#ef4444;
+
+    transform-origin:center top;
+
+    animation:growBear 1.4s ease forwards;
+
+}
+
+.bull:nth-of-type(2){
+
+    animation-delay:.2s;
+
+}
+
+.bear:nth-of-type(4){
+
+    animation-delay:.4s;
+
+}
+
+.bull:nth-of-type(6){
+
+    animation-delay:.6s;
+
+}
+
+.bull:nth-of-type(8){
+
+    animation-delay:.8s;
+
+}
+
+.bear:nth-of-type(10){
+
+    animation-delay:1s;
+
+}
+
+.bull:nth-of-type(12){
+
+    animation-delay:1.2s;
+
+}
+
+@keyframes growBull{
+
+    from{
+
+        transform:scaleY(0);
+
+    }
+
+    to{
+
+        transform:scaleY(1);
+
+    }
+
+}
+
+@keyframes growBear{
+
+    from{
+
+        transform:scaleY(0);
+
+    }
+
+    to{
+
+        transform:scaleY(1);
+
+    }
+
+}
+
+.glass-card{
+    overflow:hidden;
+}
+
+.glass-shine{
+
+    position:absolute;
+
+    top:-150%;
+
+    left:-60%;
+
+    width:70%;
+
+    height:300%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.55),
+        transparent
+    );
+
+    transform:rotate(25deg);
+
+    animation:glassShine 7s infinite;
+
+}
+
+@keyframes glassShine{
+
+    0%{
+
+        left:-70%;
+
+    }
+
+    100%{
+
+        left:170%;
+
+    }
+
+}
+
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    background:#387ed1;
+
+    opacity:.08;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    z-index:-1;
+
+    animation:glowPulse 5s ease-in-out infinite;
+
+}
+
+@keyframes glowPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.08;
+
+    }
+
+    50%{
+
+        transform:scale(1.25);
+
+        opacity:.15;
+
+    }
+
+}
+
+.home-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 44px;
+
+    border-radius:14px;
+
+    background:#387ed1;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.home-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    background:rgba(255,255,255,.25);
+
+    border-radius:50%;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:.5s;
+
+}
+
+.home-btn:hover::before{
+
+    width:320px;
+
+    height:320px;
+
+}
+
+.home-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 20px 40px rgba(56,126,209,.35);
+
+}
+
+.home-btn{
+
+    font-size:17px;
+
+}
+
+.home-btn:hover{
+
+    letter-spacing:.8px;
+
+}
+
+
+
+.cursor-glow{
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:#387ed1;
+
+    opacity:.08;
+
+    filter:blur(70px);
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    animation:moveGlow 6s ease-in-out infinite alternate;
+
+}
+
+@keyframes moveGlow{
+
+    from{
+
+        transform:
+        translate(50px,70px);
+
+    }
+
+    to{
+
+        transform:
+        translate(420px,260px);
+
+    }
+
+}
+
+/* ===========================
+   TRADING GRID
+=========================== */
+
+.trading-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(56,126,209,.05) 1px, transparent 1px),
+
+    linear-gradient(90deg, rgba(56,126,209,.05) 1px, transparent 1px);
+
+    background-size:60px 60px;
+
+    animation:gridMove 20s linear infinite;
+
+    z-index:0;
+
+}
+
+@keyframes gridMove{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(60px);
+
+    }
+
+}
+
+.bull,
+.bear{
+
+    transform-origin:center;
+
+    animation:candleMove 2.8s ease-in-out infinite;
+
+}
+
+.bull:nth-child(odd){
+
+    animation-delay:.2s;
+
+}
+
+.bear:nth-child(even){
+
+    animation-delay:.5s;
+
+}
+
+@keyframes candleMove{
+
+    0%,100%{
+
+        transform:scaleY(1);
+
+    }
+
+    25%{
+
+        transform:scaleY(.72);
+
+    }
+
+    50%{
+
+        transform:scaleY(1.25);
+
+    }
+
+    75%{
+
+        transform:scaleY(.9);
+
+    }
+
+}
+
+.wick{
+
+    stroke:#8fa9c9;
+
+    stroke-width:4;
+
+    filter:drop-shadow(0 0 8px rgba(56,126,209,.35));
+
+}
+
+.stock-chart{
+
+    transition:.5s;
+
+}
+
+.stock-chart:hover{
+
+    transform:scale(1.03);
+
+}
+
+.market-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+    padding:10px 18px;
+
+    background:#f4fbf6;
+
+    border-radius:50px;
+
+    color:#16a34a;
+
+    font-weight:600;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    animation:pulseStatus 1.5s infinite;
+
+}
+
+@keyframes pulseStatus{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.8);
+
+        opacity:.4;
+
+    }
+
+}

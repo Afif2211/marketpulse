@@ -1,0 +1,37 @@
+.profile-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:32px;
+
+}
+
+.profile-top-section{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:24px;
+
+    align-items:start;
+
+}
+
+@media(max-width:992px){
+
+.profile-page{
+
+gap:20px;
+
+}
+
+.profile-top-section{
+
+grid-template-columns:1fr;
+
+}
+
+}

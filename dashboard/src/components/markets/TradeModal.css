@@ -1,0 +1,302 @@
+.trade-modal {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.trade-modal .modal-header {
+    border-bottom: 1px solid #ececec;
+    padding: 22px 24px;
+}
+
+.trade-modal .modal-body {
+    padding: 24px;
+}
+
+.trade-modal .modal-footer {
+    border-top: 1px solid #ececec;
+    padding: 18px 24px;
+}
+
+.trade-company {
+    margin: 6px 0 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.trade-company + small {
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.trade-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.trade-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    background: #f8f9fa;
+
+    border-radius: 12px;
+}
+
+.trade-row span {
+    color: #6c757d;
+    font-size: 0.92rem;
+}
+
+.trade-row strong {
+    color: #212529;
+    font-size: 1rem;
+}
+
+.trade-total {
+    margin-top: 24px;
+
+    padding: 18px;
+
+    background: #eef7ff;
+
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+.trade-total span {
+    display: block;
+
+    color: #6c757d;
+
+    margin-bottom: 8px;
+
+    font-size: 0.9rem;
+}
+
+.trade-total h3 {
+    margin: 0;
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    color: #0d6efd;
+}
+
+.trade-modal .form-label {
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 8px;
+}
+
+.trade-modal .form-control {
+    border-radius: 10px;
+    height: 48px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.trade-modal .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.trade-modal .btn {
+    min-width: 130px;
+    height: 46px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.trade-modal .btn-success {
+    background: #198754;
+    border: none;
+}
+
+.trade-modal .btn-success:hover {
+    background: #157347;
+}
+
+.trade-modal .btn-danger {
+    border: none;
+}
+
+.trade-modal .btn-outline-secondary:hover {
+    color: white;
+}
+
+.trade-modal .alert {
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.modal.fade.show {
+    animation: tradeFadeIn 0.2s ease-in-out;
+}
+
+.trade-modal {
+    animation: tradeSlideUp 0.25s ease;
+}
+
+@keyframes tradeFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes tradeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-backdrop.show {
+    opacity: 0.45;
+}
+
+.trade-modal .btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.trade-modal .form-control:disabled {
+    background: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.trade-modal .modal-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.trade-modal-backdrop {
+    z-index: 1055;
+}
+
+.trade-modal .modal-content {
+    border-radius: 18px;
+}
+
+.trade-modal .modal-footer .btn + .btn {
+    margin-left: 10px;
+}
+
+.trade-modal input::-webkit-outer-spin-button,
+.trade-modal input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.trade-modal input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.trade-modal .form-control::placeholder {
+    color: #adb5bd;
+}
+
+.trade-modal .alert-success,
+.trade-modal .alert-danger {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+
+    .trade-modal .modal-header,
+    .trade-modal .modal-body,
+    .trade-modal .modal-footer {
+        padding: 18px;
+    }
+
+    .trade-row {
+        padding: 12px 14px;
+    }
+
+    .trade-total h3 {
+        font-size: 1.45rem;
+    }
+
+    .trade-modal .btn {
+        width: 100%;
+    }
+
+    .trade-modal .modal-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .trade-modal .modal-footer .btn + .btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .trade-modal .modal-header,
+    .trade-modal .modal-body,
+    .trade-modal .modal-footer {
+        padding: 14px;
+    }
+
+    .trade-modal h4 {
+        font-size: 1.1rem;
+    }
+
+    .trade-company {
+        font-size: 0.9rem;
+    }
+
+    .trade-row {
+        padding: 10px 12px;
+    }
+
+    .trade-row span {
+        font-size: 0.82rem;
+    }
+
+    .trade-row strong {
+        font-size: 0.9rem;
+    }
+
+    .trade-total {
+        padding: 14px;
+        margin-top: 18px;
+    }
+
+    .trade-total h3 {
+        font-size: 1.25rem;
+    }
+
+    .trade-modal .form-control {
+        height: 44px;
+        font-size: 0.95rem;
+    }
+
+    .trade-modal .btn {
+        height: 42px;
+        min-width: unset;
+        font-size: 0.9rem;
+    }
+
+}

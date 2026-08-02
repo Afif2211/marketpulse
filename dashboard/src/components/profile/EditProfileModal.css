@@ -1,0 +1,248 @@
+.edit-profile-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.edit-profile-modal{
+
+    width:500px;
+
+    max-width:95%;
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.18);
+
+}
+
+.edit-profile-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:24px 28px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.edit-profile-header h3{
+
+    margin:0;
+
+    font-size:1.45rem;
+
+    font-weight:700;
+
+}
+
+.close-btn{
+
+    border:none;
+
+    background:none;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    color:#6b7280;
+
+}
+
+.edit-profile-body{
+
+    padding:28px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#374151;
+
+}
+
+.form-group input{
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    padding:12px 15px;
+
+    font-size:15px;
+
+    transition:.25s;
+
+}
+
+.form-group input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.edit-profile-footer{
+
+    padding:22px 28px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    border-top:1px solid #ececec;
+
+}
+
+.cancel-btn{
+
+    background:#f3f4f6;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.save-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.save-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:480px){
+
+.edit-profile-modal{
+
+width:100%;
+
+max-width:100%;
+
+max-height:100vh;
+
+border-radius:0;
+
+}
+
+.edit-profile-overlay{
+
+padding:0;
+
+}
+
+.edit-profile-header{
+
+padding:18px 20px;
+
+}
+
+.edit-profile-header h3{
+
+font-size:1.2rem;
+
+}
+
+.edit-profile-body{
+
+padding:20px;
+
+}
+
+.form-group{
+
+margin-bottom:18px;
+
+}
+
+.form-group input{
+
+padding:11px 14px;
+
+font-size:14px;
+
+}
+
+.edit-profile-footer{
+
+padding:16px 20px;
+
+flex-direction:column-reverse;
+
+gap:10px;
+
+}
+
+.cancel-btn,
+.save-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}

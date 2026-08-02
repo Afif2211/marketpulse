@@ -1,0 +1,295 @@
+.custom-navbar{
+
+    height:78px;
+
+    background:var(--color-navbar-bg) !important;
+
+    border-bottom:none;
+
+    position:relative;
+
+    z-index:1000;
+
+    transition:background .3s ease;
+
+}
+
+.custom-navbar::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:2px;
+
+    background:var(--brand-gradient);
+
+    opacity:.55;
+
+}
+
+.brand-text{
+
+    display:flex;
+
+    align-items:baseline;
+
+    font-family:"Inter","Poppins",sans-serif;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+    text-decoration:none;
+
+    user-select:none;
+
+    transition:.25s;
+
+}
+
+.brand-text:hover{
+
+    transform:translateY(-1px);
+
+    opacity:.92;
+
+}
+
+.brand-market{
+
+    color:var(--color-ink);
+
+}
+
+.brand-pulse{
+
+    background:var(--brand-gradient);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+.navbar-nav .nav-item{
+
+    margin-left:18px;
+
+}
+
+.nav-link{
+
+    color:var(--color-ink) !important;
+
+    font-weight:500;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--brand-end) !important;
+
+}
+
+.nav-link.active{
+
+    color:var(--brand-end) !important;
+
+}
+
+.signup-btn{
+
+    background:var(--brand-gradient);
+
+    border:none;
+
+    color:white;
+
+    padding:10px 28px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.signup-btn:hover{
+
+    filter:brightness(1.08);
+
+    transform:translateY(-2px);
+
+    color:white;
+
+}
+
+.navbar-toggler{
+
+    border:none;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+.theme-toggle-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:1px solid var(--color-border);
+
+    background:var(--color-surface);
+
+    color:var(--color-ink);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.theme-toggle-btn:hover{
+
+    border-color:var(--brand-end);
+
+    color:var(--brand-end);
+
+}
+
+@media(max-width:991px){
+
+.custom-navbar{
+
+    height:auto;
+
+    padding:12px 0;
+
+}
+
+.brand-text{
+
+    font-size:24px;
+
+}
+
+.navbar-collapse{
+
+    padding-top:16px;
+
+    padding-bottom:8px;
+
+}
+
+.navbar-nav .nav-item{
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+.nav-link{
+
+    padding:12px 0 !important;
+
+    font-size:17px;
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+.navbar-nav .nav-item:last-child .nav-link{
+
+    border-bottom:none;
+
+}
+
+.navbar-nav .nav-item.ms-3{
+
+    margin-left:0 !important;
+
+    margin-top:12px;
+
+}
+
+.navbar-nav .nav-item.ms-2{
+
+    margin-left:0 !important;
+
+    margin-top:12px;
+
+}
+
+.signup-btn{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:14px 28px;
+
+}
+
+.theme-toggle-btn{
+
+    width:100%;
+
+    border-radius:12px;
+
+    justify-content:flex-start;
+
+    padding:0 16px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.brand-text{
+
+    font-size:21px;
+
+}
+
+.nav-link{
+
+    font-size:16px;
+
+}
+
+}

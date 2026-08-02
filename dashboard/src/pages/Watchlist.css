@@ -1,0 +1,19 @@
+.watchlist-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:32px;
+
+}
+
+@media(max-width:992px){
+
+.watchlist-page{
+
+    gap:20px;
+
+}
+
+}

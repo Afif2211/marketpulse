@@ -1,0 +1,70 @@
+:root,
+[data-theme="light"]{
+
+    --brand-start:#4338CA;
+
+    --brand-end:#3B82F6;
+
+    --brand-gradient:linear-gradient(135deg,var(--brand-start) 0%,var(--brand-end) 100%);
+
+    --color-ink:#0F0F1A;
+
+    --color-muted:#5B5B6B;
+
+    --color-accent:#FF6B4A;
+
+    --color-accent-dark:#E85A3A;
+
+    --color-surface:#FAFAFC;
+
+    --color-bg:#FFFFFF;
+
+    --color-card-bg:#FFFFFF;
+
+    --color-border:#ECECF3;
+
+    --color-navbar-bg:#FFFFFF;
+
+    --hero-gradient:linear-gradient(135deg,#4338CA 0%,#3B82F6 100%);
+
+}
+
+[data-theme="dark"]{
+
+    --brand-start:#4338CA;
+
+    --brand-end:#3B82F6;
+
+    --brand-gradient:linear-gradient(135deg,var(--brand-start) 0%,var(--brand-end) 100%);
+
+    --color-ink:#F2F2F7;
+
+    --color-muted:#A0A0B5;
+
+    --color-accent:#FF7A5C;
+
+    --color-accent-dark:#FF6B4A;
+
+    --color-surface:#171633;
+
+    --color-bg:#0D0C1F;
+
+    --color-card-bg:#1C1B3A;
+
+    --color-border:#2B2A4C;
+
+    --color-navbar-bg:#141330;
+
+    --hero-gradient:linear-gradient(135deg,#1E1B4B 0%,#1E3A8A 100%);
+
+}
+
+body{
+
+    background:var(--color-bg);
+
+    color:var(--color-ink);
+
+    transition:background .3s ease,color .3s ease;
+
+}

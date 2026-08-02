@@ -1,0 +1,227 @@
+.market-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:24px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    border:1px solid #eef2f7;
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.market-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.market-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+.market-header h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.market-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+.market-live{
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.market-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #eef2f7;
+
+    transition:.3s;
+
+}
+
+.market-item:last-child{
+
+    border:none;
+
+}
+
+.market-item:hover{
+
+    transform:translateX(5px);
+
+}
+
+.market-item h5{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+}
+
+.market-item span{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+.market-green,
+.market-red{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:700;
+
+}
+
+.market-green{
+
+    color:#16a34a;
+
+}
+
+.market-red{
+
+    color:#dc2626;
+
+}
+
+@media(max-width:768px){
+
+.market-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.market-item{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:10px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.market-card{
+
+padding:18px;
+
+border-radius:18px;
+
+}
+
+.market-header h2{
+
+font-size:20px;
+
+}
+
+.market-header p{
+
+font-size:13px;
+
+}
+
+.market-live{
+
+padding:6px 12px;
+
+font-size:12px;
+
+}
+
+.market-item{
+
+padding:14px 0;
+
+}
+
+.market-item h5{
+
+font-size:15px;
+
+}
+
+.market-item span{
+
+font-size:13px;
+
+}
+
+.market-green,
+.market-red{
+
+font-size:13px;
+
+}
+
+}

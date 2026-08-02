@@ -1,0 +1,129 @@
+.open-account-section{
+
+    background:var(--hero-gradient);
+
+    padding:100px 0;
+
+    transition:background .3s ease;
+
+}
+
+.open-account-title{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+    color:#fff;
+
+    letter-spacing:-1px;
+
+    margin-bottom:20px;
+
+}
+
+.open-account-subtitle{
+
+    font-size:1.2rem;
+
+    line-height:1.7;
+
+    color:rgba(255,255,255,.85);
+
+    margin-bottom:40px;
+
+}
+
+.open-account-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--color-accent);
+
+    color:#fff;
+
+    border:none;
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+    padding:16px 44px;
+
+    box-shadow:0 12px 30px rgba(255,107,74,.35);
+
+}
+
+.open-account-btn:hover{
+
+    background:var(--color-accent-dark);
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:992px){
+
+.open-account-section{
+
+    padding:70px 0;
+
+}
+
+.open-account-title{
+
+    font-size:2.1rem;
+
+}
+
+.open-account-subtitle{
+
+    font-size:1.05rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.open-account-section{
+
+    padding:56px 0;
+
+}
+
+.open-account-title{
+
+    font-size:1.7rem;
+
+}
+
+.open-account-subtitle{
+
+    font-size:1rem;
+
+    margin-bottom:32px;
+
+}
+
+.open-account-btn{
+
+    width:100%;
+
+    padding:16px 24px;
+
+}
+
+}

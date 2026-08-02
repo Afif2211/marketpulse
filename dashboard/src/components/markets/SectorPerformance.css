@@ -1,0 +1,175 @@
+.sector-card{
+
+    background:#ffffff;
+
+    border:1px solid #eef2f7;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.sector-header{
+
+    margin-bottom:24px;
+
+}
+
+.sector-header h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.sector-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+}
+
+.sector-table{
+
+    margin-bottom:0;
+
+}
+
+.sector-table thead th{
+
+    padding:16px;
+
+    font-size:14px;
+
+    color:#6b7280;
+
+    font-weight:600;
+
+    border-bottom:1px solid #eef2f7;
+
+}
+
+.sector-table tbody td{
+
+    padding:18px 16px;
+
+    border-bottom:1px solid #f3f4f6;
+
+    vertical-align:middle;
+
+}
+
+.sector-table tbody tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+.sector-positive{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+.sector-negative{
+
+    color:#dc2626;
+
+    font-weight:700;
+
+}
+
+.sector-status{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.bullish{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.bearish{
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+@media(max-width:768px){
+
+.sector-card{
+
+padding:20px;
+
+}
+
+.sector-table{
+
+min-width:500px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.sector-card{
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.sector-header h2{
+
+font-size:20px;
+
+}
+
+.sector-header p{
+
+font-size:13px;
+
+}
+
+.sector-table{
+
+min-width:440px;
+
+}
+
+.sector-status{
+
+padding:6px 10px;
+
+font-size:12px;
+
+}
+
+}

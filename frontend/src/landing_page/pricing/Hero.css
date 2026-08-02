@@ -1,0 +1,193 @@
+.pricing-hero{
+
+    background:var(--color-bg);
+
+    padding:110px 0 80px;
+
+    transition:background .3s ease;
+
+}
+
+.pricing-hero-eyebrow{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    color:var(--brand-end);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+    margin-bottom:26px;
+
+}
+
+.pricing-hero-title{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    line-height:1.25;
+
+    color:var(--color-ink);
+
+    letter-spacing:-1px;
+
+    margin-bottom:24px;
+
+}
+
+.pricing-hero-highlight{
+
+    background:var(--brand-gradient);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+.pricing-hero-subtitle{
+
+    font-size:1.15rem;
+
+    line-height:1.85;
+
+    color:var(--color-muted);
+
+    max-width:640px;
+
+    margin:0 auto 60px;
+
+}
+
+.pricing-hero-card{
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    border-radius:20px;
+
+    padding:40px 28px;
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.25s;
+
+}
+
+.pricing-hero-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--brand-end);
+
+    box-shadow:0 16px 40px rgba(59,130,246,.12);
+
+}
+
+.pricing-hero-value{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+    background:var(--brand-gradient);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    margin-bottom:12px;
+
+}
+
+.pricing-hero-label{
+
+    font-weight:700;
+
+    color:var(--color-ink);
+
+    margin-bottom:10px;
+
+}
+
+.pricing-hero-description{
+
+    color:var(--color-muted);
+
+    font-size:.95rem;
+
+    margin:0;
+
+}
+
+@media(max-width:992px){
+
+.pricing-hero{
+
+    padding:80px 0 56px;
+
+}
+
+.pricing-hero-title{
+
+    font-size:2.3rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.pricing-hero{
+
+    padding:60px 0 44px;
+
+}
+
+.pricing-hero-title{
+
+    font-size:1.9rem;
+
+}
+
+.pricing-hero-subtitle{
+
+    font-size:1rem;
+
+    margin-bottom:40px;
+
+}
+
+.pricing-hero-card{
+
+    padding:30px 22px;
+
+}
+
+.pricing-hero-value{
+
+    font-size:2.2rem;
+
+}
+
+}

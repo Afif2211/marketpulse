@@ -1,0 +1,251 @@
+.team-section{
+
+    background:var(--color-surface);
+
+    padding:90px 0;
+
+    transition:background .3s ease;
+
+}
+
+.team-header{
+
+    text-align:center;
+
+    max-width:640px;
+
+    margin:0 auto 70px;
+
+}
+
+.team-title{
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:var(--color-ink);
+
+    letter-spacing:-1px;
+
+    margin-bottom:18px;
+
+}
+
+.team-subtitle{
+
+    color:var(--color-muted);
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+.team-profile-col{
+
+    text-align:center;
+
+}
+
+.team-photo{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid var(--color-card-bg);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    margin-bottom:26px;
+
+}
+
+.team-name{
+
+    font-weight:800;
+
+    color:var(--color-ink);
+
+    margin-bottom:6px;
+
+}
+
+.team-role{
+
+    font-weight:600;
+
+    color:var(--brand-end);
+
+    margin-bottom:14px;
+
+}
+
+.team-location{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    color:var(--color-muted);
+
+    margin-bottom:24px;
+
+}
+
+.team-skills{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.team-skill-badge{
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    color:var(--color-ink);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+}
+
+.team-bio-col p{
+
+    color:var(--color-muted);
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+}
+
+.team-social{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-top:12px;
+
+}
+
+.team-social-btn{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    color:var(--color-ink);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.25s;
+
+}
+
+.team-social-btn:hover{
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    border-color:transparent;
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:992px){
+
+.team-section{
+
+    padding:64px 0;
+
+}
+
+.team-header{
+
+    margin-bottom:50px;
+
+}
+
+.team-title{
+
+    font-size:2rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.team-section{
+
+    padding:48px 0;
+
+}
+
+.team-title{
+
+    font-size:1.7rem;
+
+}
+
+.team-subtitle{
+
+    font-size:1rem;
+
+}
+
+.team-photo{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.team-bio-col p{
+
+    font-size:1rem;
+
+}
+
+}

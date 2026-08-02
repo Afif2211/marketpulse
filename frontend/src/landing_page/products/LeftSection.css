@@ -1,0 +1,387 @@
+.market-data-section{
+
+    background:var(--color-bg);
+
+    padding:90px 0;
+
+    transition:background .3s ease;
+
+}
+
+.market-data-image-col{
+
+    text-align:center;
+
+}
+
+.market-data-mockup{
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+    max-width:400px;
+
+    margin:0 auto;
+
+}
+
+.market-data-mockup-header{
+
+    display:flex;
+
+    gap:8px;
+
+    padding:16px 20px;
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+.market-data-mockup-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--color-border);
+
+}
+
+.market-data-mockup-body{
+
+    padding:28px;
+
+}
+
+.market-data-mockup-label{
+
+    color:var(--color-muted);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.market-data-mockup-chart{
+
+    height:90px;
+
+    margin-bottom:24px;
+
+}
+
+.market-data-mockup-chart svg{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.market-data-mockup-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.market-data-mockup-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-top:14px;
+
+    border-top:1px solid var(--color-border);
+
+}
+
+.market-data-mockup-row:first-child{
+
+    padding-top:0;
+
+    border-top:none;
+
+}
+
+.market-data-mockup-symbol{
+
+    font-weight:700;
+
+    color:var(--color-ink);
+
+    font-size:.9rem;
+
+}
+
+.market-data-mockup-price{
+
+    color:var(--color-muted);
+
+    font-size:.9rem;
+
+}
+
+.market-data-mockup-up{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+    font-size:.85rem;
+
+}
+
+.market-data-mockup-down{
+
+    color:#dc2626;
+
+    font-weight:700;
+
+    font-size:.85rem;
+
+}
+
+.market-data-eyebrow{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    color:var(--brand-end);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+    margin-bottom:24px;
+
+}
+
+.market-data-title{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    color:var(--color-ink);
+
+    margin-bottom:24px;
+
+}
+
+.market-data-highlight{
+
+    background:var(--brand-gradient);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+.market-data-subtitle{
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:var(--color-muted);
+
+    margin-bottom:44px;
+
+}
+
+.market-data-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-bottom:44px;
+
+}
+
+.market-data-feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:var(--color-card-bg);
+
+    border:1px solid var(--color-border);
+
+    transition:.25s;
+
+}
+
+.market-data-feature:hover{
+
+    border-color:var(--brand-end);
+
+    transform:translateY(-3px);
+
+}
+
+.market-data-feature-icon{
+
+    width:52px;
+
+    height:52px;
+
+    min-width:52px;
+
+    border-radius:14px;
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+}
+
+.market-data-feature h6{
+
+    font-weight:700;
+
+    color:var(--color-ink);
+
+    margin-bottom:6px;
+
+}
+
+.market-data-feature small{
+
+    color:var(--color-muted);
+
+}
+
+.market-data-cta{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    padding:15px 36px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.market-data-cta:hover{
+
+    filter:brightness(1.08);
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+
+@media(max-width:992px){
+
+.market-data-section{
+
+    padding:64px 0;
+
+}
+
+.market-data-title{
+
+    font-size:2.1rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.market-data-section{
+
+    padding:48px 0;
+
+}
+
+.market-data-title{
+
+    font-size:1.75rem;
+
+}
+
+.market-data-subtitle{
+
+    font-size:1rem;
+
+}
+
+.market-data-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.market-data-cta{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}

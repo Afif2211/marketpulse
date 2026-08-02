@@ -1,0 +1,310 @@
+.portfolio-overview{
+
+    background:#ffffff;
+
+    border:1px solid #eef2f7;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+    transition:.3s;
+
+}
+
+.portfolio-overview:hover{
+
+    box-shadow:0 18px 40px rgba(15,23,42,.08);
+
+}
+
+.portfolio-overview-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.portfolio-overview-header h2{
+
+    margin:0;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.portfolio-overview-header p{
+
+    margin-top:8px;
+
+    color:#6b7280;
+
+    font-size:16px;
+
+}
+
+.export-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px 22px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.export-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.portfolio-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.portfolio-stat{
+
+    border-right:1px solid #eef2f7;
+
+    padding-right:20px;
+
+}
+
+.portfolio-stat:last-child{
+
+    border-right:none;
+
+}
+
+.portfolio-stat span{
+
+    display:block;
+
+    color:#6b7280;
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+}
+
+.portfolio-stat h3{
+
+    margin:0;
+
+    font-size:44px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    line-height:1.1;
+
+}
+
+.gain-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.loss-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.portfolio-footer{
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eef2f7;
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+@media(max-width:992px){
+
+.portfolio-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.portfolio-stat{
+
+border-right:none;
+
+padding-right:0;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.portfolio-overview{
+
+padding:22px;
+
+}
+
+.portfolio-overview-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:18px;
+
+}
+
+.export-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+.portfolio-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.portfolio-stat h3{
+
+font-size:34px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.portfolio-overview{
+
+padding:18px;
+
+border-radius:18px;
+
+}
+
+.portfolio-overview-header h2{
+
+font-size:26px;
+
+}
+
+.portfolio-overview-header p{
+
+font-size:14px;
+
+}
+
+.portfolio-stat span{
+
+font-size:13px;
+
+margin-bottom:8px;
+
+}
+
+.portfolio-stat h3{
+
+font-size:28px;
+
+}
+
+.gain-badge,
+.loss-badge{
+
+font-size:15px;
+
+padding:8px 14px;
+
+}
+
+.portfolio-footer{
+
+font-size:13px;
+
+margin-top:24px;
+
+padding-top:16px;
+
+}
+
+}

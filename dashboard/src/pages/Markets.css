@@ -1,0 +1,19 @@
+.markets-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:32px;
+
+}
+
+@media(max-width:992px){
+
+.markets-page{
+
+gap:20px;
+
+}
+
+}

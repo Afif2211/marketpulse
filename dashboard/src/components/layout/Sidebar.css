@@ -1,0 +1,420 @@
+/* ==================================================
+   SIDEBAR
+================================================== */
+
+.sidebar{
+
+    position:fixed;
+
+    top:64px;
+    left:0;
+
+    width:240px;
+
+    height:calc(100vh - 64px);
+
+    background:var(--color-sidebar-bg);
+
+    border-right:1px solid var(--color-border);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    padding:24px 16px;
+
+    overflow-y:auto;
+
+    transition:
+        transform .3s ease,
+        width .3s ease,
+        background .3s ease,
+        border-color .3s ease;
+
+    z-index:999;
+
+}
+
+.sidebar::-webkit-scrollbar{
+
+    width:0;
+
+}
+
+/* ========================================= */
+
+.sidebar-title{
+
+    margin-bottom:18px;
+
+    padding-left:14px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:var(--color-muted);
+
+    text-transform:uppercase;
+
+}
+
+/* ========================================= */
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+/* ========================================= */
+
+.menu-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:var(--color-muted);
+
+    transition:.25s;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    box-sizing:border-box;
+
+}
+
+.menu-item:hover{
+
+    background:var(--color-surface);
+
+    color:var(--brand-end);
+
+}
+
+.menu-icon{
+
+    width:22px;
+
+    min-width:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+}
+
+.menu-text{
+
+    white-space:nowrap;
+
+}
+
+/* ========================================= */
+
+.active-menu{
+
+    background:var(--color-surface);
+
+    color:var(--brand-end) !important;
+
+    font-weight:700;
+
+    box-shadow:
+        inset 4px 0 var(--brand-end);
+
+}
+
+/* ==================================================
+   OVERLAY
+================================================== */
+
+.sidebar-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.45);
+
+    backdrop-filter:blur(2px);
+
+    z-index:998;
+
+    animation:fadeIn .25s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==================================================
+   LAPTOPS
+================================================== */
+
+@media (max-width:1200px){
+
+    .sidebar{
+
+        width:90px;
+
+        padding:24px 10px;
+
+    }
+
+    .sidebar-title{
+
+        display:none;
+
+    }
+
+    .menu-item{
+
+        justify-content:center;
+
+        padding:14px 0;
+
+        border-radius:14px;
+
+    }
+
+    .menu-text{
+
+        display:none;
+
+    }
+
+    .menu-icon{
+
+        margin:0;
+
+        font-size:20px;
+
+        width:24px;
+
+    }
+
+    .active-menu{
+
+        box-shadow:none;
+
+        background:var(--color-surface);
+
+    }
+
+}
+
+/* ==================================================
+   TABLETS & MOBILE
+================================================== */
+
+@media (max-width:768px){
+
+    .sidebar{
+
+        top:0;
+
+        left:0;
+
+        width:260px;
+
+        height:100vh;
+
+        padding:88px 18px 20px;
+
+        transform:translateX(-100%);
+
+        border-right:none;
+
+        box-shadow:
+            8px 0 40px rgba(15,23,42,.15);
+
+        z-index:1001;
+
+    }
+
+    .sidebar-open{
+
+        transform:translateX(0);
+
+    }
+
+    .sidebar-title{
+
+        display:block;
+
+        padding-left:12px;
+
+    }
+
+    .menu-item{
+
+        justify-content:flex-start;
+
+        padding:14px 16px;
+
+    }
+
+    .menu-text{
+
+        display:block;
+
+    }
+
+    .menu-icon{
+
+        width:22px;
+
+        font-size:18px;
+
+    }
+
+}
+
+/* ==================================================
+   SMALL PHONES
+================================================== */
+
+@media (max-width:480px){
+
+    .sidebar{
+
+        width:230px;
+
+        padding:82px 14px 18px;
+
+    }
+
+    .menu-item{
+
+        padding:13px 14px;
+
+        font-size:14px;
+
+    }
+
+}
+
+/* ==================================================
+   MOBILE HEADER (inside drawer)
+================================================== */
+
+.sidebar-mobile-header{
+
+    display:none;
+
+}
+
+@media (max-width:768px){
+
+    .sidebar-mobile-header{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:space-between;
+
+        position:absolute;
+
+        top:0;
+
+        left:0;
+
+        right:0;
+
+        height:64px;
+
+        padding:0 18px;
+
+        border-bottom:1px solid var(--color-border);
+
+    }
+
+    .sidebar-mobile-header h3{
+
+        margin:0;
+
+        font-size:16px;
+
+        font-weight:700;
+
+        color:var(--color-ink);
+
+    }
+
+    .sidebar-close-btn{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        width:36px;
+
+        height:36px;
+
+        border:none;
+
+        background:transparent;
+
+        border-radius:10px;
+
+        color:var(--color-muted);
+
+        font-size:16px;
+
+        cursor:pointer;
+
+        transition:.25s;
+
+    }
+
+    .sidebar-close-btn:hover{
+
+        background:var(--color-surface);
+
+        color:#DC2626;
+
+    }
+
+}

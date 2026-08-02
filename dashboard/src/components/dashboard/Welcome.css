@@ -1,0 +1,395 @@
+.welcome-card{
+
+    background:var(--color-card-bg);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.welcome-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.welcome-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:30px;
+
+}
+
+.welcome-top h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin:0;
+
+    color:var(--color-ink);
+
+}
+
+.welcome-top p{
+
+    margin-top:10px;
+
+    color:var(--color-muted);
+
+    font-size:16px;
+
+}
+
+.market-status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:rgba(22,163,74,.12);
+
+    color:#16a34a;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#16a34a;
+
+}
+
+.summary-label{
+
+    color:var(--color-muted);
+
+    font-size:15px;
+
+}
+
+.portfolio-summary h1{
+
+    margin:8px 0;
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:var(--color-ink);
+
+}
+
+.today-profit{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#16a34a;
+
+    font-weight:600;
+
+    font-size:16px;
+
+}
+
+.welcome-actions{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+    background:var(--brand-gradient);
+
+    color:#fff;
+
+    border:none;
+
+    padding:14px 26px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    filter:brightness(1.08);
+
+}
+
+.secondary-btn{
+
+    background:var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    color:var(--color-ink);
+
+    padding:14px 26px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    border-color:var(--brand-end);
+
+    color:var(--brand-end);
+
+}
+
+.paper-trading-note{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    margin-top:18px;
+
+    padding:10px 16px;
+
+    border-radius:999px;
+
+    background:var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    color:var(--brand-end);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.account-summary{
+
+    margin-top:24px;
+
+    display:flex;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.account-summary-row{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    min-width:180px;
+
+}
+
+.account-summary-row span{
+
+    color:var(--color-muted);
+
+    font-size:14px;
+
+}
+
+.account-summary-row strong{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:var(--color-ink);
+
+}
+
+@media(max-width:768px){
+
+.welcome-card{
+
+padding:24px;
+
+}
+
+.welcome-top{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.portfolio-summary h1{
+
+font-size:38px;
+
+}
+
+.welcome-actions{
+
+flex-direction:column;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+.account-summary{
+
+gap:24px;
+
+}
+
+.account-summary-row{
+
+min-width:140px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.welcome-card{
+
+padding:18px;
+
+border-radius:18px;
+
+}
+
+.welcome-top h2{
+
+font-size:24px;
+
+}
+
+.welcome-top p{
+
+font-size:14px;
+
+}
+
+.market-status{
+
+padding:8px 14px;
+
+font-size:13px;
+
+}
+
+.portfolio-summary h1{
+
+font-size:30px;
+
+}
+
+.today-profit{
+
+font-size:14px;
+
+}
+
+.account-summary{
+
+gap:18px;
+
+}
+
+.account-summary-row{
+
+min-width:120px;
+
+}
+
+.account-summary-row strong{
+
+font-size:20px;
+
+}
+
+.paper-trading-note{
+
+font-size:12px;
+
+padding:8px 12px;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+padding:12px 20px;
+
+font-size:14px;
+
+}
+
+}
