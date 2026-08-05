@@ -18,17 +18,6 @@ This is a solo full-stack project built to practice and demonstrate modern MERN 
 
 ---
 
-## Screenshots
-
-_Add a few screenshots here once deployed — e.g. the Dashboard, Portfolio page, Markets page, and the marketing site's Home page in both light and dark mode._
-
-```
-![Dashboard](./screenshots/dashboard.png)
-![Portfolio](./screenshots/portfolio.png)
-```
-
----
-
 ## Features
 
 **Trading & Portfolio**
