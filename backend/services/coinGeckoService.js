@@ -3,11 +3,14 @@ const axios = require("axios");
 const COINGECKO_URL =
     "https://api.coingecko.com/api/v3/coins/markets";
 
-// Cache market data for 60 seconds
-const CACHE_DURATION = 60 * 1000;
+// Cache market data for 3 minutes — crypto prices don't need
+// to refresh every few seconds for this app, and this drastically
+// cuts how often we hit CoinGecko's free-tier rate limit.
+const CACHE_DURATION = 3 * 60 * 1000;
 
 let cachedMarket = null;
 let lastFetched = 0;
+let inFlightRequest = null;
 
 const fetchMarketFromAPI = async () => {
 
@@ -38,23 +41,42 @@ const getCryptoMarket = async () => {
         return cachedMarket;
     }
 
-    try {
+    // If a fetch is already in progress (e.g. several dashboard
+    // components asking at once), share that same request instead
+    // of firing multiple calls to CoinGecko at the same time.
+    if (inFlightRequest) {
+        return inFlightRequest;
+    }
 
-        return await fetchMarketFromAPI();
+    inFlightRequest = (async () => {
 
-    } catch (err) {
+        try {
 
-        // If CoinGecko rate limits us but we still have cached data,
-        // continue using the cached prices instead of failing.
-        if (cachedMarket) {
-            console.log(
-                "CoinGecko rate limited. Using cached market data."
-            );
-            return cachedMarket;
+            return await fetchMarketFromAPI();
+
+        } catch (err) {
+
+            // If CoinGecko rate limits us but we still have cached data
+            // (even if slightly stale), keep serving it instead of failing.
+            if (cachedMarket) {
+                console.log(
+                    "CoinGecko rate limited. Using cached market data."
+                );
+                return cachedMarket;
+            }
+
+            throw err;
+
+        } finally {
+
+            inFlightRequest = null;
+
         }
 
-        throw err;
-    }
+    })();
+
+    return inFlightRequest;
+
 };
 
 const getCryptoBySymbol = async (symbol) => {
