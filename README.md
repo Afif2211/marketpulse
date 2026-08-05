@@ -12,9 +12,9 @@ This is a solo full-stack project built to practice and demonstrate modern MERN 
 
 | App | Link |
 |---|---|
-| Marketing site | _add your deployed URL here_ |
-| Trading dashboard | _add your deployed URL here_ |
-| API | _add your deployed URL here_ |
+| Marketing site | [marketpulse-frontend-three.vercel.app](https://marketpulse-frontend-three.vercel.app) |
+| Trading dashboard | [marketpulse-dashboard-pi.vercel.app](https://marketpulse-dashboard-pi.vercel.app) |
+| API | [marketpulse-pvjz.onrender.com](https://marketpulse-pvjz.onrender.com) |
 
 ---
 
@@ -46,7 +46,7 @@ _Add a few screenshots here once deployed — e.g. the Dashboard, Portfolio page
 - Email/password signup and login
 - Google OAuth (Sign in with Google)
 - Secure password reset via email (Resend)
-- HTTP-only JWT cookies, environment-aware cookie security for local vs. production
+- Token-based authentication (JWT via Authorization header), working reliably across separate domains and mobile browsers
 
 **Design**
 - Fully responsive across mobile, tablet, and desktop
@@ -67,7 +67,7 @@ _Add a few screenshots here once deployed — e.g. the Dashboard, Portfolio page
 **Backend**
 - Node.js + Express
 - MongoDB + Mongoose
-- JWT authentication with HTTP-only cookies
+- JWT authentication (Authorization header)
 - bcryptjs for password hashing
 
 **Third-Party Services**
@@ -147,6 +147,7 @@ Create `dashboard/.env`:
 
 ```env
 REACT_APP_API_URL=http://localhost:8000/api
+REACT_APP_FRONTEND_URL=http://localhost:3000
 ```
 
 ```bash
@@ -192,6 +193,7 @@ When deploying, set the same environment variables as above in each platform's d
 - This is a portfolio/learning project, not a production financial product.
 - Password reset emails are sent via Resend's free tier, which — without a verified custom domain — can currently only deliver to the email address the Resend account was created with.
 - AI Insights are generated from portfolio numbers only and should not be treated as real investment advice.
+- Free-tier third-party APIs (CoinGecko, Groq) have low rate limits; heavy testing/usage may occasionally cause temporary delays in crypto prices or AI insights.
 
 ---
 
