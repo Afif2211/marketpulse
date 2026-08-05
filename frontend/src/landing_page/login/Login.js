@@ -5,6 +5,9 @@ import {
   FaLock,
   FaEye,
   FaEyeSlash,
+  FaChartLine,
+  FaShieldAlt,
+  FaBolt,
 } from "react-icons/fa";
 import { Link} from "react-router-dom";
 import api from "../../services/api";
@@ -312,11 +315,40 @@ const handleGoogleSuccess = async (credentialResponse) => {
 
         <div className="col-lg-6 p-0 d-none d-lg-block auth-image-col">
 
-          <img
-            src="media/images/signup.png"
-            alt="Login Illustration"
-            className="img-fluid h-100 auth-image"
-          />
+          <div className="auth-visual">
+
+            <div className="auth-visual-icon">
+              <FaChartLine />
+            </div>
+
+            <h3>Track Every Move</h3>
+
+            <p>
+              Real-time stock and crypto prices, a portfolio
+              that updates as the market moves, and AI-driven
+              insights to help you learn faster.
+            </p>
+
+            <div className="auth-visual-features">
+
+              <div className="auth-visual-feature">
+                <FaBolt />
+                <span>Live market data</span>
+              </div>
+
+              <div className="auth-visual-feature">
+                <FaShieldAlt />
+                <span>$10,000 virtual funds</span>
+              </div>
+
+              <div className="auth-visual-feature">
+                <FaChartLine />
+                <span>Zero real-world risk</span>
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 

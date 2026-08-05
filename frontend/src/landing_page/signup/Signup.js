@@ -6,6 +6,9 @@ import {
   FaLock,
   FaEye,
   FaEyeSlash,
+  FaRocket,
+  FaBrain,
+  FaWallet,
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api";
@@ -380,11 +383,40 @@ const Signup = () => {
 
         <div className="col-lg-6 p-0 d-none d-lg-block auth-image-col">
 
-          <img
-            src="media/images/signup.png"
-            alt="Signup Illustration"
-            className="img-fluid h-100 auth-image"
-          />
+          <div className="auth-visual">
+
+            <div className="auth-visual-icon">
+              <FaRocket />
+            </div>
+
+            <h3>Start Investing Risk-Free</h3>
+
+            <p>
+              Every new account starts with $10,000 in virtual
+              cash. Practice buying and selling real stocks and
+              crypto, with nothing real on the line.
+            </p>
+
+            <div className="auth-visual-features">
+
+              <div className="auth-visual-feature">
+                <FaWallet />
+                <span>$10,000 starting balance</span>
+              </div>
+
+              <div className="auth-visual-feature">
+                <FaBrain />
+                <span>AI-powered portfolio insights</span>
+              </div>
+
+              <div className="auth-visual-feature">
+                <FaRocket />
+                <span>Free forever, no card required</span>
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
