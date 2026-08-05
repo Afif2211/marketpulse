@@ -119,15 +119,33 @@ const getPortfolio = async (req, res) => {
 
             holdings.map(async (holding) => {
 
-                if (holding.assetType === "crypto") {
-                    return await getCryptoPrice(
+                try {
+
+                    if (holding.assetType === "crypto") {
+                        return await getCryptoPrice(
+                            holding.symbol
+                        );
+                    }
+
+                    return await getQuote(
                         holding.symbol
                     );
-                }
 
-                return await getQuote(
-                    holding.symbol
-                );
+                } catch (error) {
+
+                    if (holding.assetType === "crypto") {
+
+                        return {
+                            currentPrice: holding.averageBuyPrice,
+                        };
+
+                    }
+
+                    return {
+                        c: holding.averageBuyPrice,
+                    };
+
+                }
 
             })
 
@@ -264,11 +282,29 @@ const buildPortfolioSnapshot = async (userId) => {
 
         holdings.map(async (holding) => {
 
-            if (holding.assetType === "crypto") {
-                return await getCryptoPrice(holding.symbol);
-            }
+            try {
 
-            return await getQuote(holding.symbol);
+                if (holding.assetType === "crypto") {
+                    return await getCryptoPrice(holding.symbol);
+                }
+
+                return await getQuote(holding.symbol);
+
+            } catch (error) {
+
+                if (holding.assetType === "crypto") {
+
+                    return {
+                        currentPrice: holding.averageBuyPrice,
+                    };
+
+                }
+
+                return {
+                    c: holding.averageBuyPrice,
+                };
+
+            }
 
         })
 
